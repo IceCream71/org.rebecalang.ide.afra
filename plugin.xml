@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+	<extension id="product_test" point="org.eclipse.core.runtime.products">
+  		<product application="org.rebecalang.ide.afra.application" name="My Product">
+    		<property name="appName" value="My App"> </property>
+    		<property name="applicationXMI" value="org.rebecalang.ide.afra/Application.e4xmi"> </property>
+  		</product>
+	</extension>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="org.rebecalang.ide.afra.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="org.rebecalang.ide.afra.Perspective"
+            id="org.rebecalang.ide.afra.perspective">
+      </perspective>
+   </extension>
+
+</plugin>

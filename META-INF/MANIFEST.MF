@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Afra
+Bundle-SymbolicName: org.rebecalang.ide.afra;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.rebecalang.ide.afra.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.views;bundle-version="3.7.0",
+ org.eclipse.ui.navigator;bundle-version="3.5.401",
+ org.eclipse.ui.navigator.resources;bundle-version="3.4.700",
+ org.eclipse.ui.ide
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
